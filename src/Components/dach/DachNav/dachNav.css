@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+.dach-header {
+  background-color: rgb(201, 196, 196);
+  padding: 0;
+  margin: 5px 0px;
+  position: relative;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 100;
+}
+
+.dach-navbar {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+}
+
+.leftside-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.leftside-nav img {
+  width: 40px;
+  height: 37px;
+  border-radius: 4px;
+}
+
+.leftside-nav input {
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  width: 50%;
+  transition: all 2s ease;
+}
+
+.rightside-nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.rightside-nav li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.rightside-nav li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black !important;
+  margin: 0px 10px;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.rightside-nav .icons,
+.work-job-div .icons {
+  font-size: 25px;
+}
+
+.work-job-div {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.work-job-div button,
+.work-job-div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-job-div button {
+  border: none;
+}
+
+.work-job-div a {
+  text-decoration: none;
+  color: rgb(88, 85, 85);
+}
+
+.cover-page {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(197, 194, 194, 0.6);
+  width: 100%;
+}
+
+.leftside-nav .full-width-search {
+  width: 60%;
+}
+
+.search-btn {
+  display: none;
+  cursor: pointer;
+  border: none;
+}
+
+.open-right-nav {
+  display: none;
+}
+
+.leftside-nav .hide-search-icon {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .hide-input {
+    display: none;
+  }
+  .search-btn {
+    display: block;
+    font-size: 19px;
+  }
+}
+.show-search {
+  display: block;
+  width: 100%;
+}
+
+.leftside-nav .hide-search-icon {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .dach-navbar {
+    flex-direction: column;
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .leftside-nav {
+    width: 100%;
+    max-height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(94, 93, 95);
+  }
+}
+.show-menu {
+  border: none;
+  margin: 3px;
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .leftside-nav {
+    max-height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(94, 93, 95);
+  }
+
+  .rightside-nav {
+    background-color: rgb(191, 189, 194, 0.8);
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .rightside-nav li {
+    margin: 0;
+    padding: 0;
+  }
+  .rightside-nav li a,
+  .work-job-div button,
+  .work-job-div a {
+    margin: 2px;
+    padding: 2px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 319px) {
+  .rightside-nav {
+    display: none;
+  }
+  .show-menu {
+    display: block;
+  }
+}
+
+.menu-active {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: cornflowerblue;
+  width: fit-content;
+  position: fixed;
+  top: 15%;
+}
+
+@media (max-width: 720px) {
+  .leftside-nav {
+    max-height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(94, 93, 95);
+  }
+  .rightside-nav li {
+    margin: 0;
+    padding: 0;
+  }
+  .rightside-nav {
+    background-color: rgb(191, 189, 194, 0.8);
+  }
+  .rightside-nav li a,
+  .work-job-div button,
+  .work-job-div a {
+    margin: 2px;
+    padding: 2px;
+    font-size: 2vw;
+    font-weight: 600;
+  }
+}
+
+.hide-img img {
+  display: none;
+}
+
+@media (max-width: 450px) {
+}
+
+.show-search-only img {
+  display: none;
+}
+.show-search-only {
+  justify-content: flex-start;
+  /* align-items: flex-start; */
+  width: 100%;
+}
+.show-search-only input {
+  width: 100%;
+  margin: 5px;
+}
+.show-search-only button {
+  display: none;
+}

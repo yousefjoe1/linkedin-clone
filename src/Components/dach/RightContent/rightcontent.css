@@ -1,0 +1,26 @@
+.right-div {
+  background-color: #c6c7c9;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.link {
+  display: flex;
+}
+
+.link img {
+  width: 80px;
+  height: 50px;
+}
+
+.comp-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.comp-info button {
+  border: none;
+}

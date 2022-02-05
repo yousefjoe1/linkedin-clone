@@ -1,0 +1,14 @@
+.title {
+  background-color: aliceblue;
+  border: 2px solid violet;
+}
+
+a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}

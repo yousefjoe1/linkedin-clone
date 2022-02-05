@@ -1,0 +1,51 @@
+.search-history-container {
+  position: absolute;
+  left: 0;
+  top: 85%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: rgba(250, 250, 250, 0.9);
+  transition: all 2s ease;
+  border-radius: 3px;
+}
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+}
+.search-result a {
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 5px;
+}
+
+.history-anime {
+  animation-name: history-anime;
+  animation-duration: 2s;
+}
+
+@keyframes history-anime {
+  0% {
+    width: 270px;
+    height: 300px;
+  }
+  100% {
+    width: 50%;
+    height: 500px;
+  }
+}
+
+@media (min-width: 620px) {
+  .search-history-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 620px) {
+  .search-history-container {
+    width: 90%;
+    top: 90%;
+  }
+}
